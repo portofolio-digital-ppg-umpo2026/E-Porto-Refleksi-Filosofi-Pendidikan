@@ -1,0 +1,689 @@
+/* ===============================
+   GOOGLE FONT
+================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* ===============================
+   SCROLLBAR
+================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:10px;
+}
+
+/* ===============================
+   PROGRESS BAR
+================================== */
+
+#progress{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:#2563eb;
+    z-index:9999;
+}
+
+/* ===============================
+   NAVBAR
+================================== */
+
+nav{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+z-index:999;
+transition:.4s;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(12px);
+
+}
+
+nav.active{
+
+background:#ffffff;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+font-size:28px;
+font-weight:700;
+color:#2563eb;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:35px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#2563eb;
+
+}
+
+/* ===============================
+   HERO
+================================== */
+
+#home{
+
+width:100%;
+height:100vh;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:120px 10%;
+
+background:
+
+linear-gradient(120deg,#2563eb,#4f46e5);
+
+color:white;
+
+}
+
+.hero-left{
+
+width:55%;
+
+}
+
+.hero-left h4{
+
+letter-spacing:4px;
+margin-bottom:10px;
+
+}
+
+.hero-left h1{
+
+font-size:58px;
+font-weight:700;
+line-height:1.2;
+
+}
+
+.hero-left h2{
+
+margin-top:15px;
+font-size:28px;
+color:#FFD54F;
+min-height:45px;
+
+}
+
+.hero-left p{
+
+margin-top:25px;
+line-height:2;
+
+}
+
+.hero-right{
+
+width:40%;
+display:flex;
+justify-content:center;
+
+}
+
+.hero-right img{
+
+width:360px;
+height:360px;
+border-radius:50%;
+object-fit:cover;
+
+border:8px solid white;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+transition:.4s;
+
+}
+
+.hero-right img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===============================
+BUTTON
+================================== */
+
+.btn{
+
+display:inline-block;
+margin-top:35px;
+
+padding:15px 35px;
+
+background:white;
+
+color:#2563eb;
+
+text-decoration:none;
+
+font-weight:700;
+
+border-radius:50px;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px);
+
+background:#FFD54F;
+
+color:#222;
+
+}
+
+/* ===============================
+SECTION
+================================== */
+
+section{
+
+padding:100px 10%;
+
+}
+
+.title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.title h1{
+
+font-size:40px;
+
+color:#2563eb;
+
+position:relative;
+
+display:inline-block;
+
+}
+
+.title h1::after{
+
+content:"";
+
+width:60%;
+
+height:4px;
+
+background:#FFD54F;
+
+position:absolute;
+
+left:20%;
+
+bottom:-10px;
+
+}
+
+/* ===============================
+PROFIL
+================================== */
+
+.profil-container{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:60px;
+
+}
+
+.profil-image{
+
+flex:1;
+
+text-align:center;
+
+}
+
+.profil-image img{
+
+width:300px;
+
+height:300px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.profil-text{
+
+flex:2;
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.profil-text p{
+
+margin-bottom:18px;
+
+line-height:2;
+
+text-align:justify;
+
+}
+
+.moto{
+
+margin-top:30px;
+
+background:#2563eb;
+
+color:white;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+.moto i{
+
+font-size:40px;
+
+margin-bottom:15px;
+
+color:#FFD54F;
+
+}
+
+/* ===============================
+CARD
+================================== */
+
+.card-container{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+
+color:#2563eb;
+
+margin-bottom:20px;
+
+}
+
+.card h2{
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+line-height:1.9;
+
+text-align:justify;
+
+}
+
+/* ===============================
+ARTEFAK
+================================== */
+
+.artefak-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+margin-bottom:40px;
+
+}
+
+.pdf i{
+
+font-size:90px;
+
+color:red;
+
+margin-bottom:20px;
+
+}
+
+.pdf h2{
+
+margin-bottom:20px;
+
+}
+
+.pdf p{
+
+line-height:2;
+
+margin-bottom:25px;
+
+}
+
+.info-card{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:30px;
+
+}
+
+.info{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info h2{
+
+margin-bottom:20px;
+
+color:#2563eb;
+
+}
+
+.info p{
+
+line-height:2;
+
+text-align:justify;
+
+}
+
+/* ===============================
+FOOTER
+================================== */
+
+footer{
+
+background:#1e3a8a;
+
+padding:40px;
+
+text-align:center;
+
+color:white;
+
+margin-top:80px;
+
+}
+
+footer h2{
+
+margin-bottom:10px;
+
+}
+
+/* ===============================
+BACK TO TOP
+================================== */
+
+#topBtn{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+background:#2563eb;
+
+color:white;
+
+font-size:22px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+display:none;
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+transform:scale(1.15);
+
+}
+
+/* ===============================
+RESPONSIVE
+================================== */
+
+@media(max-width:900px){
+
+#home{
+
+flex-direction:column-reverse;
+
+height:auto;
+
+text-align:center;
+
+padding-top:150px;
+
+}
+
+.hero-left,
+.hero-right{
+
+width:100%;
+
+}
+
+.hero-left h1{
+
+font-size:38px;
+
+}
+
+.hero-right img{
+
+width:250px;
+height:250px;
+
+margin-bottom:40px;
+
+}
+
+.profil-container{
+
+flex-direction:column;
+
+}
+
+.card-container{
+
+grid-template-columns:1fr;
+
+}
+
+.info-card{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+padding:15px 5%;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+}
+/* ===============================
+RIPPLE BUTTON
+===============================*/
+
+.btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.ripple{
+
+position:absolute;
+
+width:15px;
+
+height:15px;
+
+background:white;
+
+border-radius:50%;
+
+transform:scale(0);
+
+animation:ripple .6s linear;
+
+pointer-events:none;
+
+}
+
+@keyframes ripple{
+
+to{
+
+transform:scale(25);
+
+opacity:0;
+
+}
+
+}
